@@ -1,0 +1,89 @@
+@import "normalize";       // api: https://github.com/necolas/normalize.css/
+@import "variables";       // 站点变量
+@import "base";
+
+.clear{clear:both;visibility: hidden;}
+.h10{height: 10px;}
+.fr{float: right;}
+.flex {display: flex;}
+.justify {justify-content: space-between;}
+.align {align-items: center;}
+.center {justify-content: center;}
+.direaction {flex-direction: column;}
+.wrap {flex-wrap: wrap;}
+
+// element-ui 分割线 样式
+.el-divider {
+  background-color: #DCDFE6;
+  position: relative;
+}
+
+.el-divider--vertical {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin: 0 8px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.el-table__header .lightGreen {
+  background-color: $lightGreen;
+}
+.el-tooltip__popper{
+  max-width: 90%;
+}
+
+.cDanger {
+  color: $colorDanger;
+}
+
+.cWarning {
+  color: $colorWarning;
+}
+
+.cPrimary {
+  color: $colorPrimary;
+}
+
+.lGreen {
+  color: $lightGreen;
+}
+
+@for $i from 1 through 5 {
+  .mt-#{$i} {
+    margin-top: #{$i * 10}px;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i * 10}px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i * 10}px;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i * 10}px;
+  }
+}
+
+.front .el-upload-list--picture-card .el-upload-list__item {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #c0ccda;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 182px;
+  margin: 0 8px 8px 0;
+  display: inline-block;
+}
+
+.body-message{
+  z-index: 2999 !important;
+}

@@ -1,0 +1,39 @@
+.status {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px 0;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  vertical-align: top;
+  line-height: 1.8;
+  cursor: text;
+}
+.default {
+  color: #5E9EF3;
+  background-color: #E4F2FF;
+}
+.wait {
+  background-color: #FDF6EC;
+  color: #E6A23C;
+}
+
+.pass {
+  color: #67C23A;
+  background-color: #F0F9EB;
+}
+
+.service {
+  color: #5E9EF3;
+  background-color: #E4F2FF;
+}
+
+.reject {
+  color: #EB5757;
+  background-color: #FEF0F0;
+}
+
+.return {
+  color: #666666;
+  background-color: #EFEFEF;
+}

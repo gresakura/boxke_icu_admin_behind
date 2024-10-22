@@ -1,0 +1,21 @@
+// 站点主色
+// tips: 要达到整站主题修改效果, 请确保[$--color-primary]站点主色与[/src/element-ui-theme/index.js]文件中[import './element-[#17B3A3]/index.css']当前主题色一致
+$--color-primary: #0B5138;
+
+// Navbar
+$navbar--background-color: $--color-primary;
+
+// Sidebar
+$sidebar--background-color-dark: #0B5138;
+$sidebar--color-text-dark: rgb(191, 203, 217);
+
+// Content
+$content--background-color: #f1f4f5;
+
+$lightGreen: #f9fcff;
+
+$colorDanger: #ff4d4f;
+$colorWarning: #fc8334;
+$colorPrimary: #11B789;
+$lightGreen: #f3fbf9;
+$colorWhite: #ffffff;
