@@ -1,74 +1,107 @@
 <template>
-  <div class="contionst">
-    <el-menu
-      :default-active="activeIndex"
-      class="el-menu-demo laymenu"
-      mode="horizontal"
-      @select="handleSelect"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#ffd04b"
-    >
-      <div class="logo">132</div>
-      <el-menu-item index="1">首页</el-menu-item>
-      <el-menu-item index="2">网站管理</el-menu-item>
-      <el-menu-item index="3">系统管理</el-menu-item>
-      <el-menu-item index="4">接口管理</el-menu-item>
-      <el-menu-item index="5">跳转前台</el-menu-item>
-    </el-menu>
-    <el-dropdown :hide-on-click="false" class="loginInfo">
-      <span class="el-dropdown-link"> 下拉菜单 </span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item>个人信息</el-dropdown-item>
-        <el-dropdown-item>退出登入</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>
-  </div>
+  <header class="header">
+    <div class="homePage">
+      <div class="blogLoge">
+        <a class="site-name" href="/" data-pjax-state>
+          Sakura
+          <img :src="SakuraHome" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        activeIndex: '1',
-      };
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      },
-    },
-  };
+
+export default {
+  name: 'Home',
+  data() {
+    return {
+      SakuraHome: require('@/assets/img/header/sakuraHome.png'),
+      navigationHomePage: require('@/assets/img/navigation-homePage.png'),
+    }
+  },
+  methods: {
+
+  }
+}
+
 </script>
 
-<style scoped>
-  .el-menu--horizontal > .el-menu-item,
-  .el-menu--horizontal > .el-menu-item.is-active {
-    border-bottom: none;
-  }
+<style lang="scss" scoped>
+.header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  // background-color: red;
 
-  .contionst {
+  .homePage {
     display: flex;
-    width: 100%;
-  }
-
-  .laymenu {
-    display: flex;
-    width: 100%;
     align-items: center;
-    .logo {
-      padding: 0 45px 0 50px;
+    padding: 0 20px 0 20px;
+    cursor: default;
+
+    .blogLoge {
+      ::before {
+        content: "\e607";
+        font-family: "iconfont";
+        // background: url('@/assets/img/navigation-homePage.png') no-repeat;
+        background-color: rgb(57, 197, 187);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        transition: .3;
+        -webkit-transition: .3;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin-left: 5px;
+        animation: blink 1s infinite;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ffb7c5;
+        box-shadow: 0 0 5px rgb(57, 197, 187) !important;
+        text-align: center;
+        opacity: 0;
+        line-height: 35px;
+        font-size: 20px;
+      }
+    }
+
+    .site-name {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ffb7c5, #ffd1dc, #ffb7c5);
+      background-size: 200% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: gradientAnimation 3s linear infinite;
+      position: relative;
+
+      &:hover::before {
+        opacity: 1;
+        scale: (1.03);
+      }
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
     }
   }
-  .loginInfo {
-    display: flex;
-    background: #545c64;
-    color: #fff;
-    .el-dropdown-link {
-      color: white;
-      border-bottom: solid 1px #e6e6e6;
-      width: 80px;
-      line-height: 60px;
-    }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
 </style>
