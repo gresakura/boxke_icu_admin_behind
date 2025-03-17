@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1203859",
+      "name": "play",
+      "font_class": "play",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "12089101",
+      "name": "左箭头",
+      "font_class": "arrow_left_fat",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "12089102",
+      "name": "右箭头",
+      "font_class": "arrow_right_fat",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "17830621",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "28085264",
+      "name": "背景音乐",
+      "font_class": "beijingyinle",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "34273143",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}

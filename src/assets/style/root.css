@@ -2,3 +2,7 @@
   --el-color-primary: #39c5bb;
   --background-image: url(~@/assets/img/home_bg.webp)
 }
+
+:root {
+  --sakura-color: #ffb7c5;
+}

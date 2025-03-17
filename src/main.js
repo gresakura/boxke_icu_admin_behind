@@ -10,8 +10,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 /** element-ui ******************************************/
 
 /** icon */
-import '@/assets/icon/font_05ao09t983v6/iconfont.css'
-import '@/assets/icon/font_05ao09t983v6/iconfont.js'
+import '@/assets/icon/font_4osfw94hdbh/iconfont.css'
+import '@/assets/icon/font_4osfw94hdbh/iconfont.js'
 
 
 import '@/assets/scss/index.scss'
